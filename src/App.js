@@ -8,7 +8,7 @@ import Header from "./Header";
 
 
 const tasks = [
-  { id: 1, content: "obudzić Reacta", done: true },
+  { id: 1, content: "obudzić Reacta", done: false },
   { id: 2, content: "zmienić olej w aucie", done: true },
 ];
 
