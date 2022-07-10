@@ -2,7 +2,8 @@ import "./style.css"
 const Tasks = (props) => (
   <ul className="task__list">
     {props.tasks.map(task => (
-      <li
+      <li key={task.id}
+     
         className={`tasks__display ${task.done && props.hideDoneTasks
             ? "tasks__display--hidden"
             : ""}`}
