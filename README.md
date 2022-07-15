@@ -1,8 +1,24 @@
 # Task list
 
-Description
+# Description
+An application that will help you organize your tasks. In it you can:
+- create tasks
+- mark done or mark off
+- hide all tasks
+-perform all tasks with one button
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Technologies used
+- BEM
+- Flex Box
+- Grid
+- Media query
+- React JS
+- ES6+
+
+## Demo
+https://mateusszzp.github.io/todo-list-react/
 
 ## Available Scripts
 
@@ -38,3 +54,4 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
+![The presentation](/todo_list_react.gif)
