@@ -7,14 +7,14 @@
     margin: -15px 0 0;
 }
 
-.section__input {
+.form__input {
     flex-basis: 100%;
     padding: 8px;
     border: 1px solid #e7e5e5;
     margin: 5px 0;
 }
 
-.section__button {
+.form__button {
     flex-wrap: wrap;
     flex-basis: 100%;
     background-color: teal;
@@ -27,18 +27,18 @@
     
 }
 
-.section__button:hover {
+.form__button:hover {
     background-color: hsl(180, 100%, 30%);
     transform:scaleY(1.1) scaleX(1.05);
    
 }
 
 @media (min-width:768px) {
-    .section__input {
+    .form__input {
         flex-basis: 78%;
     }
 
-    .section__button {
+    .form__button {
         flex-basis: 20%;
         flex-wrap: unset;
     }

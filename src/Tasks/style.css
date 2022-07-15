@@ -11,14 +11,14 @@
     display: none;
 }
 
-.task__list {
+.tasks__list {
     background: white;
     margin-top: -14px;
     padding: 0 10px 0;
 
 }
 
-.task__remove--button {
+.tasks__remove--button {
     width: 30px;
     height: 30px;
     background-color: hsl(0, 87%, 55%);
@@ -31,11 +31,11 @@
     transition: 1s;
 }
 
-.task__remove--button:hover {
+.tasks__remove--button:hover {
     background-color: hsl(0, 87%, 65%);
 }
 
-.task__done--button {
+.tasks__done--button {
     width: 30px;
     height: 30px;
     justify-self: start;
@@ -48,18 +48,18 @@
 
 }
 
-.task__done--button:hover {
+.tasks__done--button:hover {
     background-color: hsl(120, 100%, 30%);
 }
 
-.list__item {
+.tasks__item {
     justify-self: start;
     align-self: center;
     color: hsl(0, 1%, 42%);
     font-style: normal;
 }
 
-.list__item--done {
+.tasks__item--done {
     text-decoration: line-through;
 }
 
