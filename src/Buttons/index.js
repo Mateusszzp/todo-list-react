@@ -10,7 +10,6 @@ const Buttons = ({ tasks, hideDoneTasks }) => (
         <button
           className="buttons__button"
           disabled={tasks.every(({ done }) => done)}
-
         >
           Ukończ Wszystkie
         </button>
