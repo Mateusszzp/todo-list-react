@@ -5,16 +5,25 @@ import Buttons from "./Buttons";
 import Section from "./Section";
 import Header from "./Header";
 
-const tasks = [
-  { id: 1, content: "obudzić Reacta", done: false },
-  { id: 2, content: "zmienić olej w aucie", done: true },
-];
+
+
+
 
 function App() {
   const [hideDone, setHideDone] = useState(false);
 
+  const [tasks, setTasks] = useState([
+    { id: 1, content: "obudzić Reacta", done: false },
+    { id: 2, content: "zmienić olej w aucie", done: true },
+  ]);
+
   const toggleHideDone = () => {
     setHideDone(hideDone => !hideDone);
+  };
+
+  const removeTask = (id) => {
+    setTasks(tasks => tasks.filter
+      (task => task.id !== id));
   }
   return (
     <main>
@@ -28,14 +37,14 @@ function App() {
 
       <Section
         title="Lista zadań"
-        body={<Tasks tasks={tasks} hideDone={hideDone} />}
+        body={<Tasks tasks={tasks} hideDone={hideDone} removeTask={removeTask} />}
         exstraHeaderContent={
           <Buttons
             tasks={tasks}
             hideDone={hideDone}
-            toggleHideDone={toggleHideDone} 
-            />
-          }
+            toggleHideDone={toggleHideDone}
+          />
+        }
       />
     </main>
   );
