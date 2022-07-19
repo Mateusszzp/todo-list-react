@@ -15,7 +15,7 @@ function App() {
   const [tasks, setTasks] = useState([
     { id: 1, content: "obudzić Reacta", done: false },
     { id: 2, content: "zmienić olej w aucie", done: true },
-    { id: 3, content: "umyć konia ", done: false }
+    { id: 3, content: "wsadzić Nine do basenu ", done: false },
   ]);
 
   const toggleHideDone = () => {
@@ -36,12 +36,24 @@ function App() {
 
     }));
   }
+
   const setAllDone = () => {
     setTasks(tasks => tasks.map(task => ({
       ...task,
       done: true,
     })));
   }
+
+  const addNewTask = (content) => {
+    setTasks(tasks => [
+      ...tasks,
+      {
+        content,
+        done: false,
+        id: tasks.length ? tasks[tasks.length - 1].id + 1 : 1,
+      },
+    ]);
+  };
   return (
     <main>
       <Header
@@ -49,7 +61,7 @@ function App() {
       />
       <Section
         title="Dodaj nowe zadanie"
-        body={<Form />}
+        body={<Form addNewTask={addNewTask} />}
       />
 
       <Section

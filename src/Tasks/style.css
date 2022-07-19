@@ -21,7 +21,7 @@
 .tasks__remove--button {
     width: 30px;
     height: 30px;
-    background-color: hsl(0, 87%, 55%);
+    background-color: hsl(0, 87%, 45%);
     grid-column: 3;
     justify-self: end;
     align-self: center;
@@ -29,10 +29,12 @@
     border: none;
     cursor: pointer;
     transition: 1s;
+    
 }
 
 .tasks__remove--button:hover {
-    background-color: hsl(0, 87%, 65%);
+    background-color: hsl(0, 87%, 70%);
+    
 }
 
 .tasks__done--button {
@@ -49,7 +51,7 @@
 }
 
 .tasks__done--button:hover {
-    background-color: hsl(120, 100%, 30%);
+    background-color: hsl(120, 100%, 40%);
 
 }
 
