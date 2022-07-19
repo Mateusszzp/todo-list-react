@@ -50,6 +50,7 @@
 
 .tasks__done--button:hover {
     background-color: hsl(120, 100%, 30%);
+
 }
 
 .tasks__item {
@@ -68,6 +69,3 @@
     background: white;
     border-top: 1px solid #e7e5e5;
 }
-
-
-
