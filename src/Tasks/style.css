@@ -21,19 +21,22 @@
 .tasks__remove--button {
     width: 30px;
     height: 30px;
-    background-color: hsl(0, 87%, 45%);
+    background-color: hsl(0, 87%, 40%);
     grid-column: 3;
     justify-self: end;
     align-self: center;
     color: white;
-    border: none;
+    border-color: hsl(0, 87%, 45%);
     cursor: pointer;
-    transition: 1s;
+    
     
 }
 
 .tasks__remove--button:hover {
-    background-color: hsl(0, 87%, 70%);
+    background-color: hsl(0, 87%, 65%);
+    border-color:1px black;
+    border-radius: 4px;
+    transition: 0.5s;
     
 }
 
@@ -44,16 +47,20 @@
     align-self: center;
     background-color: hsl(120, 100%, 25%);
     color: white;
-    border: none;
+    border-color: hsl(120, 100%, 25%);
     cursor: pointer;
-    transition: 1s;
+   
 
 }
 
 .tasks__done--button:hover {
     background-color: hsl(120, 100%, 40%);
-
+    border-color:1px black;
+    transition: 0.5s;
+    border-radius: 4px;
+    
 }
+
 
 .tasks__item {
     justify-self: start;
