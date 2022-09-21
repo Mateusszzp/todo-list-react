@@ -7,15 +7,13 @@ import Header from "./Header";
 
 
 
-
-
 function App() {
 
   const [hideDone, setHideDone] = useState(false);
   const [tasks, setTasks] = useState([
     { id: 1, content: "obudzić Reacta", done: false },
     { id: 2, content: "zmienić olej w aucie", done: true },
-    { id: 3, content: "wsadzić Nine do basenu ", done: false },
+    { id: 3, content: "zrobić obiad ", done: false },
   ]);
 
   const toggleHideDone = () => {
@@ -23,19 +21,13 @@ function App() {
   };
 
   const removeTask = (id) => {
-    setTasks(tasks => tasks.filter
-      (task => task.id !== id));
+    setTasks(tasks => tasks.filter(task => task.id !== id));
   };
 
   const toggleTaskDone = (id) => {
-    setTasks(tasks => tasks.map(task => {
-      if (task.id === id) {
-        return { ...task, done: !task.done };
-      }
-      return task;
-
-    }));
-  }
+    setTasks(tasks => tasks.map(task => task.id === id ?
+      { ...task, done: !task.done } : task))
+  };
 
   const setAllDone = () => {
     setTasks(tasks => tasks.map(task => ({
