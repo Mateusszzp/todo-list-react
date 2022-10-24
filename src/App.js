@@ -8,23 +8,17 @@ import Header from "./Header";
 
 
 function App() {
-const [data, setData] = useState("")
+
   const [hideDone, setHideDone] = useState(false);
-  const [tasks, setTasks] = useState([
-    
-    ]);
+  const [tasks, setTasks] = useState(
+    JSON.parse(localStorage.getItem("task")) || []
+  );
 
-const get_data = JSON.parse(localStorage.getItem("task"))
   useEffect(() => {
-setData( tasks !==undefined ) 
-{localStorage.setItem("task", JSON.stringify(tasks))}
+    localStorage.setItem("task", JSON.stringify(tasks));
+  }, [tasks])
 
-    
-  },[tasks])
-  
-  console.log(get_data)
-
-const toggleHideDone = () => {
+  const toggleHideDone = () => {
     setHideDone(hideDone => !hideDone);
   };
 
@@ -44,8 +38,8 @@ const toggleHideDone = () => {
 
     })))
   }
-  
-  const addNewTask = (content                 ) => {
+
+  const addNewTask = (content) => {
     setTasks(tasks => [
       ...tasks,
       {
@@ -53,9 +47,7 @@ const toggleHideDone = () => {
         done: false,
         id: tasks.length ? tasks[tasks.length - 1].id + 1 : 1,
       }
-      ]);
-    
-   
+    ]);
   };
   return (
     <main>
@@ -66,7 +58,6 @@ const toggleHideDone = () => {
         title="Dodaj nowe zadanie"
         body={<Form addNewTask={addNewTask} />}
       />
-
       <Section
         title="Lista zadań"
         body={<Tasks tasks={tasks}
