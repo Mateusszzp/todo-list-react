@@ -1,20 +1,24 @@
-.form {
+import styled from "styled-components";
+
+export const Forms = styled.form`
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 15px;
     background: white;
     margin: -15px 0 0;
-}
-
-.form__input {
+`;
+export const Input = styled.input`
     flex-basis: 100%;
     padding: 8px;
     border: 1px solid #e7e5e5;
     margin: 5px 0;
-}
 
-.form__button {
+  @media (min-width:768px) {
+    flex-basis: 78%;
+    }
+`;
+export const Button = styled.button`
     flex-wrap: wrap;
     flex-basis: 100%;
     background-color: teal;
@@ -24,22 +28,15 @@
     margin: 5px 0;
     cursor: pointer;
     transition:0.5s;
-    
-}
 
-.form__button:hover {
-    background-color: hsl(180, 100%, 30%);
-    transform:scaleY(1.1) scaleX(1.05);
-   
-}
-
-@media (min-width:768px) {
-    .form__input {
-        flex-basis: 78%;
+ &:hover {
+    background-color: hsl(180, 100%, 35%);
+    transform:scaleY(1.2) scaleX(1.08);
     }
 
-    .form__button {
+    @media (min-width:768px) {
         flex-basis: 20%;
         flex-wrap: unset;
+    
     }
-}
+`;
