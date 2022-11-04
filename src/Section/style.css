@@ -39,3 +39,8 @@
         margin: 0%;
     }
 }
+.task {
+    padding: 15px;
+    background: white;
+    border-top: 1px solid #e7e5e5;
+}
