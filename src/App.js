@@ -5,8 +5,6 @@ import Buttons from "./Buttons";
 import Section from "./Section";
 import Header from "./Header";
 
-
-
 function App() {
 
   const [hideDone, setHideDone] = useState(false);
