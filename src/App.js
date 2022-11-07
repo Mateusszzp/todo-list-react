@@ -4,11 +4,15 @@ import Tasks from "./Tasks";
 import Buttons from "./Buttons";
 import Section from "./Section";
 import Header from "./Header";
-import { useTasks } from "./useTasks"
+import  {useTasks}  from "./useTasks"
 
 function App() {
 
   const [hideDone, setHideDone] = useState(false);
+  
+  const toggleHideDone = () => {
+    setHideDone(hideDone => !hideDone);
+  };
   const {
     tasks,
     removeTask,
@@ -16,10 +20,6 @@ function App() {
     toggleTaskDone,
     setAllDone,
   } = useTasks()
-
-  const toggleHideDone = () => {
-    setHideDone(hideDone => !hideDone);
-  };
 
   return (
     <>
