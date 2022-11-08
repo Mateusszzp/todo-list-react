@@ -10,15 +10,15 @@ export const Button = styled.button`
 
   &:hover {
     filter:brightness(110%);
-    }
-    &:active{
+  }
+  &:active{
       filter:brightness(120%);
-    }
+  }
   &:disabled {
     color: ${({ theme }) => theme.colors.alto};
-    }
+  }
 
   @media(max-width:${({ theme }) => theme.breakpoints.mobile}px) {
         margin: 0%;
-    }
+  }
 `;

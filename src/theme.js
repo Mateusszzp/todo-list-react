@@ -1,5 +1,4 @@
 
-  
 export const theme = {
     colors:{
         teal: "#008080",//duży buuton
@@ -14,4 +13,4 @@ export const theme = {
         mobileMax:600,
         
     }
-}
+};

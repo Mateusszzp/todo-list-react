@@ -20,7 +20,7 @@ export const Input = styled.input`
   @media (min-width:${({theme}) => theme.breakpoints.mobile}px) 
   {
     flex-basis: 78%;
-    }
+  }
 `;
 export const Button = styled.button`
     flex-wrap: wrap;
@@ -36,7 +36,7 @@ export const Button = styled.button`
  &:hover {
     filter:brightness(120%);
     transform:scaleY(1.2) scaleX(1.08);
-    }
+ }
 
     @media (min-width:${({theme}) => theme.breakpoints.mobile}px) 
     {

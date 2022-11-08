@@ -10,7 +10,7 @@ export const SectionsTitle = styled.section`
   @media (max-width:${({ theme }) => theme.breakpoints.mobileMax}px) {
     flex-direction: column;
     align-items: center;
-    }
+  }
 
 `;
 export const Title = styled.span`
