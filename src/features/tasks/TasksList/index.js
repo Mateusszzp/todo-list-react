@@ -6,8 +6,7 @@ const TasksList = () => {
 
   const { tasks, hideDone } = useSelector(selectTasks);
   const dispatch = useDispatch();
-  console.log(hideDone)
-  
+
   return (
     <List>
       {tasks.map(task => (

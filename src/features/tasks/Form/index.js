@@ -12,7 +12,6 @@ const Form = () => {
   const onFormSubmit = (event) => {
     event.preventDefault();
 
-
     const trimednewTaskContent = newTaskContent.trim();
 
     dispatch(addTask({
@@ -24,11 +23,9 @@ const Form = () => {
     if (!trimednewTaskContent) {
       return;
     }
-
     setNewTaskContent("");
     inputRef.current.focus();
   };
-
   return (
     <Forms onSubmit={onFormSubmit}>
       <Input
