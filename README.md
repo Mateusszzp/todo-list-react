@@ -10,19 +10,15 @@ An application that will help you organize your tasks. In it you can:
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Technologies used
-- BEM
-- Flex Box
-- Grid
-- Media query
-- React JS
+- CSS {BEM, Flex Box, Grid, Media query}
+- webpack
+- React JS {styled-components, hooks:useState, useRef, useEffect, custom hook}
 - ES6+
+- Redux 
 
 ## Demo
 https://mateusszzp.github.io/todo-list-react/
 
-## Available Scripts
-
-In the project directory, you can run:
 
 ### `npm start`
 
