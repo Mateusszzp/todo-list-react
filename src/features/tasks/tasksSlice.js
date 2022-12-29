@@ -1,6 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit';
 
-
 const tasksSlice = createSlice({
     name: 'tasks',
     initialState: {
@@ -10,7 +9,6 @@ const tasksSlice = createSlice({
     reducers: {
         addTask: ({ tasks }, { payload }) => {
             tasks.push(payload);
-            console.log(tasks)
         },
         toggleHideDone: state => {
             state.hideDone = !state.hideDone;
@@ -22,17 +20,13 @@ const tasksSlice = createSlice({
         removeTask: (state, action) => {
             const index = state.tasks.findIndex(task => task.id === action.payload)
             state.tasks.splice(index, 1)
-            console.log(index)
         },
-        setAllDone: (state, action) => {
-           const index =  state.tasks.every(task => task.done !== true)
-           
-            console.log(index)
-        }
-    },
-
+        setAllDone: ({ tasks }) => {
+            tasks.forEach((task) => { task.done = true }
+            );
+        },
+    }
 });
-
 
 export const { addTask, toggleHideDone, toggleTaskDone, removeTask, setAllDone } = tasksSlice.actions;
 export const selectTasks = state => state.tasks;
