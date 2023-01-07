@@ -1,4 +1,6 @@
-import { createGlobalStyle } from "styled-components";
+import { NavLink } from "react-router-dom";
+import styled, { createGlobalStyle, } from "styled-components";
+
 
 export const GlobalStyle = createGlobalStyle`
 html {
@@ -18,4 +20,10 @@ html {
     font-family: 'Lato', sans-serif;
     background-color: #e7e5e5;
   }
+`;
+
+export const StyledNavLink = styled(NavLink)`
+&.active {
+  color:red;
+}
 `;

@@ -8,20 +8,7 @@ export const Forms = styled.form`
     background:${({theme}) => theme.colors.white};
     margin: -15px 0 0;
 `;
-export const Input = styled.input`
-    flex-basis: 100%;
-    padding: 8px;
-    border: 1px solid ${({theme}) => theme.colors.mercury};
-    margin: 5px 0;
 
-    
-    
-    
-  @media (min-width:${({theme}) => theme.breakpoints.mobile}px) 
-  {
-    flex-basis: 78%;
-  }
-`;
 export const Button = styled.button`
     flex-wrap: wrap;
     flex-basis: 100%;
