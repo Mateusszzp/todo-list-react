@@ -11,7 +11,7 @@ function TaskPage() {
 	const task = useSelector(state => getTaskById(state, id));
 	return (
 		<>
-			<Header title="Szczegóły zadania " />
+			<Header title="Szczegóły zadania "/>
 			<Section
 				title={task ? task.content : "Nie znaleziono zadania 😢"}
 				body={<>

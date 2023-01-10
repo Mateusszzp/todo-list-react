@@ -21,7 +21,7 @@ const Search = () => {
     return (
         <Wrapper>
             <Input
-                placeholder="filtruj zadania"
+                placeholder="Filter zadań"
                 value={query || ""}
                 onChange={onInputchange} />
         </Wrapper>

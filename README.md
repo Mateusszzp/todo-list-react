@@ -14,7 +14,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - webpack
 - React JS {styled-components, hooks:useState, useRef, useEffect, custom hook}
 - ES6+
-- Redux 
+- redux, redux-saga, react-router-dom
+- download sample tasks asynchronous function
+
 
 ## Demo
 https://mateusszzp.github.io/todo-list-react/

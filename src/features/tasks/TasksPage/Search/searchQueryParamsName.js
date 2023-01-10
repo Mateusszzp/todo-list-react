@@ -1,4 +1,4 @@
 
- export default "dupsko"
+ export default "szukaj"
 
 

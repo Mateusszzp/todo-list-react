@@ -4,21 +4,29 @@ import Buttons from "./Buttons";
 import Section from "../../../common/Section";
 import Header from "../../../common/Header";
 import Search from "./Search";
+import { fetchExampleTasks } from "../tasksSlice";
+import { Button } from "./styled";
+import { useDispatch, useSelector } from "react-redux";
 
 
 function TasksPage() {
+
+  const dispatch = useDispatch();
 
   return (
     <>
       <Header title="Lista Zadań" />
       <Section
+        button={
+          <Button
+            onClick={() => dispatch(fetchExampleTasks())}
+          >Pobierz przykładowe zadania
+          </Button>}
         title="Dodaj nowe zadanie"
         body={<Form />} />
-
       <Section
         title="Wyszukiwarka"
-        body={<Search/>} />
-
+        body={<Search />} />
       <Section title="Lista zadań"
         body={<TasksList />}
         exstraHeaderContent={

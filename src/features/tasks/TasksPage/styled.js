@@ -1,12 +1,15 @@
 import styled from "styled-components";
 
 export const Button = styled.button`
+  
     background: ${({ theme }) => theme.colors.white};
     color: ${({ theme }) => theme.colors.teal};
     border: none;
     transition: 0.6s;
     cursor: pointer;
+    padding:8px;
     margin-right: 20px;
+    
 
   &:hover {
     filter:brightness(110%);
