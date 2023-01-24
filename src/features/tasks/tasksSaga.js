@@ -1,12 +1,13 @@
 import { takeEvery, takeLatest, call, put, select, delay, debounce, throttle } from 'redux-saga/effects';
 import { getExampleTasks } from './getExampleTasks';
-import { fetchExampleTasks, setTasks, selectTasks } from './tasksSlice';
+import { fetchExampleTasks, setTasks, selectTasks,loadingApi } from './tasksSlice';
 import { saveTasksInLocalStorage } from "./tasksLocalStorage"
 function* fetchExampleTasksHandler() {
     try {
-        yield delay(1000)
+    yield delay(2000)
         const exampleTasks = yield call(getExampleTasks);
-        yield put(setTasks(exampleTasks));
+        yield put(setTasks(exampleTasks,console.log("Opóźnienie")));
+        console.log(exampleTasks)
     } catch (error) {
         const er = yield put({ type: "error", error })
         console.log(er)
@@ -22,6 +23,8 @@ export function* tasksSaga() {
     console.log("saga jest podłączona")
     yield takeLatest(fetchExampleTasks.type, fetchExampleTasksHandler);
     yield takeEvery("*", saveTasksInLocalStorageHandler)
+    
+   
 
 
 
