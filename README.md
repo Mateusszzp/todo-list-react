@@ -1,7 +1,6 @@
-# ⚒ Task list ![](/icon.png)
+# ⚒ ***Task list*** 📝 
 
-
-## ⚒ Description ⛏
+## ⚒ **Description** ⛏
 An application that will help you organize your tasks. In it you can:
 - create tasks
 - mark done or mark off
@@ -10,7 +9,7 @@ An application that will help you organize your tasks. In it you can:
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## 🛠 Technologies
+## 🛠 **Technologies**
 - HTML 
 - CSS {BEM, Flex Box, Grid, Media query}
 - Webpack
@@ -22,10 +21,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - GIT 
 
 
-## ⚒ Demo
+## ⚒ **Demo** 📂
 https://mateusszzp.github.io/todo-list-react/
 
-## 🛠 Instruction 🔧
+## 🛠 **Instruction** 🔧
 ![The presentation](/todo_list_react.gif)
 
 
