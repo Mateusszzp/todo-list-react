@@ -1,7 +1,7 @@
 # ⚒ Task list
 
-![The presentation](/todo_list_react.gif)
-# ⚒ Description
+
+## ⚒ Description ⛏
 An application that will help you organize your tasks. In it you can:
 - create tasks
 - mark done or mark off
@@ -10,17 +10,23 @@ An application that will help you organize your tasks. In it you can:
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## ⚒ Technologies used
+## 🛠 Technologies
+- HTML 
 - CSS {BEM, Flex Box, Grid, Media query}
 - webpack
-- React JS {styled-components, hooks:useState, useRef, useEffect, custom hook}
-- ES6+
-- redux, redux-saga, react-router-dom
+- JavaScript ES6+
+- React  {styled-components, hooks:useState, useRef, useEffect, custom hook}
+- redux(Redux (hooks: useSelector, useDispatch, selectors, dispatch, reducers))
+- redux-saga, react-router-dom
 - download sample tasks asynchronous function
+- GIT 
 
 
 ## ⚒ Demo
 https://mateusszzp.github.io/todo-list-react/
+
+## 🛠 Instruction 🔧
+![The presentation](/todo_list_react.gif)
 
 
 ### 🛠 `npm start`
