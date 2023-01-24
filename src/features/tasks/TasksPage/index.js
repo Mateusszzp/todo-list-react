@@ -11,7 +11,7 @@ import { useDispatch, useSelector } from "react-redux";
 
 function TasksPage() {
   const loading = useSelector(selectTasksLoading)
-  const dispatch = useDispatch({loading: false});
+  const dispatch = useDispatch();
 
   return (
     <>
