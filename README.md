@@ -1,6 +1,6 @@
 # Task list
 
-# Description
+# Description⚒
 An application that will help you organize your tasks. In it you can:
 - create tasks
 - mark done or mark off
