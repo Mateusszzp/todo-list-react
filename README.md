@@ -1,6 +1,7 @@
-# Task list
+# ⚒ Task list
 
-# Description⚒
+![The presentation](/todo_list_react.gif)
+# ⚒ Description
 An application that will help you organize your tasks. In it you can:
 - create tasks
 - mark done or mark off
@@ -9,7 +10,7 @@ An application that will help you organize your tasks. In it you can:
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Technologies used
+## ⚒ Technologies used
 - CSS {BEM, Flex Box, Grid, Media query}
 - webpack
 - React JS {styled-components, hooks:useState, useRef, useEffect, custom hook}
@@ -18,11 +19,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - download sample tasks asynchronous function
 
 
-## Demo
+## ⚒ Demo
 https://mateusszzp.github.io/todo-list-react/
 
 
-### `npm start`
+### 🛠 `npm start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
@@ -32,7 +33,7 @@ You may also see any lint errors in the console.
 
 
 
-### `npm run build`
+### 🛠 `npm run build`
 
 Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
@@ -42,7 +43,7 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+### 🛠 `npm run eject`
 
 **Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
@@ -52,4 +53,3 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-![The presentation](/todo_list_react.gif)
