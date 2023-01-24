@@ -1,4 +1,4 @@
-# ⚒ Task list
+# ⚒ Task list ![](/icon.png)
 
 
 ## ⚒ Description ⛏
@@ -13,12 +13,12 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## 🛠 Technologies
 - HTML 
 - CSS {BEM, Flex Box, Grid, Media query}
-- webpack
+- Webpack
 - JavaScript ES6+
 - React  {styled-components, hooks:useState, useRef, useEffect, custom hook}
-- redux(Redux (hooks: useSelector, useDispatch, selectors, dispatch, reducers))
-- redux-saga, react-router-dom
-- download sample tasks asynchronous function
+- Redux (hooks: useSelector, useDispatch, selectors, dispatch, reducers)
+- Redux-saga, react-router-dom
+- Download sample tasks asynchronous function
 - GIT 
 
 
