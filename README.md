@@ -1,4 +1,4 @@
-# ⚒ ***Task list*** 📝 
+# ⚒ ***Task list/ React/ Redux*** 📝 
 
 ## ⚒ **Description** ⛏
 An application that will help you organize your tasks. In it you can:

@@ -7,8 +7,7 @@ import Search from "./Search";
 import { fetchExampleTasks, selectTasksLoading } from "../tasksSlice";
 import { Button } from "./styled";
 import { useDispatch, useSelector } from "react-redux";
-
-
+import { ThreeDots } from 'react-loading-icons'
 function TasksPage() {
   const loading = useSelector(selectTasksLoading)
   const dispatch = useDispatch();
@@ -23,7 +22,10 @@ function TasksPage() {
           >{
               loading
                 ? "Pobierz przykładowe zadania"
-                : "Loading"
+                : <ThreeDots
+                  stroke="teal"
+                  strokeOpacity={0.75}
+                  strokeWidth={"center"} />
             }
           </Button>}
         title="Dodaj nowe zadanie"
