@@ -4,7 +4,7 @@ import Buttons from "./Buttons";
 import Section from "../../../common/Section";
 import Header from "../../../common/Header";
 import Search from "./Search";
-import { fetchExampleTasks, loading, setTasks, selectTasks, selectTasksLoading } from "../tasksSlice";
+import { fetchExampleTasks, selectTasksLoading } from "../tasksSlice";
 import { Button } from "./styled";
 import { useDispatch, useSelector } from "react-redux";
 
@@ -20,8 +20,11 @@ function TasksPage() {
         button={
           <Button
             onClick={() => dispatch(fetchExampleTasks())}
-           
-          >{loading ? "Pobierz przykładowe zadania" : "Loading"}
+          >{
+              loading
+                ? "Pobierz przykładowe zadania"
+                : "Loading"
+            }
           </Button>}
         title="Dodaj nowe zadanie"
         body={<Form />} />
