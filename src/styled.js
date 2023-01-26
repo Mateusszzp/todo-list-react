@@ -23,7 +23,21 @@ html {
 `;
 
 export const StyledNavLink = styled(NavLink)`
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ 
+ background-color: ${({ theme }) => theme.colors.teal};
+ color: white;
+ text-decoration: none;
+
 &.active {
   color:red;
 }
 `;
+export const Nav = styled.nav`
+background-color: ${({ theme }) => theme.colors.teal};
+max-width:100%;
+max-height: 80px;
+
+`
