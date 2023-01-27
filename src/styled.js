@@ -19,10 +19,7 @@ html {
     flex-direction: column;
     font-family: 'Lato', sans-serif;
     background-color: #e7e5e5;
-    
-}
- 
-  
+  }
 `;
 
 export const StyledNavLink = styled(NavLink)`
@@ -32,13 +29,10 @@ export const StyledNavLink = styled(NavLink)`
  text-decoration: none;
  cursor: pointer;
  
-
-
 &.active {
   color:white;
   font-weight: bold;
-  
-} 
+  } 
 `;
 export const Ul = styled.ul`
 display: flex;
@@ -48,5 +42,4 @@ list-style: none;
 padding:25px;
 background-color: ${({ theme }) => theme.colors.teal};
 margin: 0;
-
 `;
