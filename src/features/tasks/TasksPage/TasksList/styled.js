@@ -1,4 +1,5 @@
 import styled, { css } from "styled-components";
+import { NavLink } from "react-router-dom";
 
 export const List = styled.ul`
     background: ${({ theme }) => theme.colors.white};
@@ -60,9 +61,9 @@ export const ButtonRemove = styled.button`
     border-radius: 3px;
 }
 `;
-// export const Links = styled.li`
-// text-decoration: none;
-// color:red;
-// list-style: none;
-// background: yellowgreen;
-// `
+export const Links = styled(NavLink)`
+text-decoration: none;
+color:red;
+list-style: none;
+background: yellowgreen;
+`

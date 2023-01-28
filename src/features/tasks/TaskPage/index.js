@@ -9,11 +9,12 @@ import Section from "../../../common/Section";
 function TaskPage() {
 	const { id } = useParams()
 	const task = useSelector(state => getTaskById(state, id));
+	console.log(task.id)
 	return (
 		<>
 			<Header title="Szczegóły zadania "/>
 			<Section
-				title={task ? task.content : "Nie znaleziono zadania 😢"}
+				title={task.id ? task.content : "Nie znaleziono zadania 😢"}
 				body={<>
 					<strong>
 						Ukończono:</strong> {task.done ? "TAK" : "NIE"}

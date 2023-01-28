@@ -4,6 +4,7 @@ import TasksPage from "./features/tasks/TasksPage/index";
 import TaskPage from "./features/tasks/TaskPage/index";
 import { StyledNavLink, Ul, Body,Link } from "./styled";
 
+
 function App() {
 
   return (
@@ -19,7 +20,7 @@ function App() {
         </Ul>
         <Body>
           <Switch>
-            <Route path="/zadania/:id">
+            <Route path={"/zadania/:id"}>
               <TaskPage />
             </Route>
             <Route path="/zadania">
