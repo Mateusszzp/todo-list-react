@@ -2,7 +2,7 @@ import { HashRouter, Switch, Route, Redirect } from "react-router-dom"
 import AuthorPage from "./features/author/AuthorPage"
 import TasksPage from "./features/tasks/TasksPage/index";
 import TaskPage from "./features/tasks/TaskPage/index";
-import { StyledNavLink, Ul, Body } from "./styled";
+import { StyledNavLink, Ul, Body,Link } from "./styled";
 
 function App() {
 

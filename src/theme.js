@@ -1,7 +1,7 @@
 
 export const theme = {
     colors:{
-        teal: "#008080",//duży buuton
+        teal: "#0d6e79",//duży buuton
         Laur: "#008000",//zilony mały button
         milanoRed: "#BF0D0D",// czerwony mały button
         white: "#ffffff",//tło białe
