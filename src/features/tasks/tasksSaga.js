@@ -8,24 +8,14 @@ function* fetchExampleTasksHandler() {
         const exampleTasks = yield call(getExampleTasks);
         yield put(setTasks(exampleTasks,console.log("Opóźnienie")));
         console.log(exampleTasks)
-    } catch (error) {
-        const er = yield put({ type: "ups jakiś błąd z pobieraniem", error })
-        console.log(er)
-    }
-}
+    } catch (error) { yield put(error)}
+};
 function* saveTasksInLocalStorageHandler() {
     const tasks = yield select(selectTasks);
     yield call(saveTasksInLocalStorage, tasks)
-
-}
-
+};
 export function* tasksSaga() {
     console.log("saga jest podłączona")
     yield takeLatest(fetchExampleTasks.type, fetchExampleTasksHandler);
     yield takeEvery("*", saveTasksInLocalStorageHandler)
-    
-   
-
-
-
-}
+};
