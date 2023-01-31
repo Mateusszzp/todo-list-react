@@ -10,20 +10,21 @@ export const List = styled.ul`
 export const Item = styled.li`
     display: grid;
     grid-template-columns: auto 1fr auto;
-    grid-gap: 10px;
+    grid-gap: 15px;
     word-break: break-word;
     border-bottom: 1px solid ${({ theme }) => theme.colors.mercury};
-    padding: 10px;
+    padding: 12px;
+    align-items: center
 
    ${({ hidden }) => hidden && css`
         display: none;
-   `}
+  `}
 `;
 
 export const Content = styled.span`
     ${({ done }) => done && css`
         text-decoration: line-through
-`}
+  `}
 `;
 
 export const ButtonDone = styled.button`
@@ -40,8 +41,7 @@ export const ButtonDone = styled.button`
  &:hover {
     background:#07cf07;
     border-radius: 3px;
-   
-}
+   }
 `;
 
 export const ButtonRemove = styled.button`
@@ -59,11 +59,12 @@ export const ButtonRemove = styled.button`
  &:hover {
     background: hsl(0, 87%, 65%);
     border-radius: 3px;
-}
+   }
 `;
-export const Links = styled(NavLink)`
-text-decoration: none;
-color:red;
-list-style: none;
-background: yellowgreen;
-`
+    export const Links = styled(NavLink)`
+    text-decoration: none;
+    color: ${({ theme }) => theme.colors.teal};
+ HGFF&:hover {
+    color:orange;
+   }
+`;

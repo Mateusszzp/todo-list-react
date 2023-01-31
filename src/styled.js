@@ -27,9 +27,9 @@ export const StyledNavLink = styled(NavLink)`
     text-decoration: none;
     cursor: pointer;
   
-    &.active {
-  color:white;
-  font-weight: bold;
+  &.active {
+    color:white;
+    font-weight: bold;
   } 
 `;
 export const Ul = styled.ul`
