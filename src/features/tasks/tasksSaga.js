@@ -9,7 +9,7 @@ function* fetchExampleTasksHandler() {
         yield put(setTasks(exampleTasks,console.log("Opóźnienie")));
         console.log(exampleTasks)
     } catch (error) {
-        const er = yield put({ type: "error", error })
+        const er = yield put({ type: "ups jakiś błąd z pobieraniem", error })
         console.log(er)
     }
 }
