@@ -41,8 +41,3 @@ export const Ul = styled.ul`
     background-color: ${({ theme }) => theme.colors.teal};
     margin: 0;
 `;
-// export const Link = styled.li`
-// text-decoration: none;
-// color:red;
-// list-style: none;
-// `

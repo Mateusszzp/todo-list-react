@@ -18,8 +18,8 @@ function TasksPage() {
       <Section
         button={
           <Button
-            onClick={() => dispatch(fetchExampleTasks())}
-          >{
+            onClick={() => dispatch(fetchExampleTasks())}>
+            {
               loading
                 ? "Pobierz przykładowe zadania"
                 : <ThreeDots

@@ -10,7 +10,6 @@ export const Button = styled.button`
     padding:8px;
     margin-right: 20px;
     
-
   &:hover {
     filter:brightness(110%);
   }
@@ -21,7 +20,7 @@ export const Button = styled.button`
     color: ${({ theme }) => theme.colors.alto};
   }
 
-  @media(max-width:${({ theme }) => theme.breakpoints.mobile}px) {
+@media(max-width:${({ theme }) => theme.breakpoints.mobile}px) {
         margin: 0%;
   }
 `;

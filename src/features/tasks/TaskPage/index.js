@@ -9,7 +9,7 @@ import Section from "../../../common/Section";
 function TaskPage() {
 	const { id } = useParams()
 	const task = useSelector(state => getTaskById(state, id));
-	console.log(task.id)
+	
 	return (
 		<>
 			<Header title="Szczegóły zadania "/>

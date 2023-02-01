@@ -64,7 +64,7 @@ export const ButtonRemove = styled.button`
     export const Links = styled(NavLink)`
     text-decoration: none;
     color: ${({ theme }) => theme.colors.teal};
- HGFF&:hover {
+ &:hover {
     color:orange;
    }
 `;
