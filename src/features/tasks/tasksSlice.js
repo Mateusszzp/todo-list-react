@@ -49,7 +49,6 @@ export const {
     loading,
 } = tasksSlice.actions;
 
-
 const selectTasksState = state => state.tasks;
 
 export const selectTasksLoading = state => selectTasksState(state).loading;
