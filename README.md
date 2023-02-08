@@ -18,7 +18,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - Redux (hooks: useSelector, useDispatch, selectors, dispatch, reducers)
 - Redux-saga, react-router-dom
 - Download sample tasks asynchronous function
-- GIT 
+- Github, GIT 
 
 
 ## ⚒ **Demo** 📂
