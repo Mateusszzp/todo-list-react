@@ -8,7 +8,7 @@ const AuthorPage = () => (
             title="Mateusz Paśko"
             body={<><p><strong>Mam 36 lat urodziłem się w Rzeszowie aktualnie zamieszkuje Wrocław.😊</strong></p>
                <p> W chwili obecnej
-                <strong> rozpoczołem kurs Frontend developer Java Script</strong>, jestem osobą systematyczną, zdeterminowaną z przyjaznym
+                <strong> kończe kurs Frontend developer Java Script</strong>, jestem osobą systematyczną, zdeterminowaną z przyjaznym
                 usposobieniem.
                 Cenie sobie prace w przyjaznej atmosferze opartej na koleżeństwie. Dzięki kursowi mam nadzieje na zmiane branży i rozpoczęcie
                 pracy w
