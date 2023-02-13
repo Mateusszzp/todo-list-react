@@ -15,7 +15,7 @@ function TaskPage() {
 				title={task ? task.content : "Nie znaleziono zadania 😢"}
 				body={<>
 					<strong>
-						Ukończono:</strong> {task ? "TAK" : "NIE"}
+						Ukończono:</strong> {task.done ? "TAK" : "NIE"}
 				</>} />
 		</>
 	);
