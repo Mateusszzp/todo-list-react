@@ -1,8 +1,6 @@
 import Header from "../../common/Header";
 import Section from "../../common/Section";
 
-
-
 const AuthorPage = () => (
     <>
         <Header title="O autorze" />
