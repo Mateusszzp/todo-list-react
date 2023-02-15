@@ -8,9 +8,9 @@ const Search = () => {
 	const location = useLocation();
 	const history = useHistory();
 	const query = (new URLSearchParams(location.search).get(searchQueryParamsName))
-	const dupa = useQueryParameters(searchQueryParamsName)
+	const loc = useQueryParameters(searchQueryParamsName)
 	console.log(query)
-	console.log(dupa)
+	console.log(loc)
 	const onInputchange = ({ target }) => {
 		const searchParams = new URLSearchParams(location.search);
 	

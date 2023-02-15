@@ -4,7 +4,7 @@ import searchQueryParamsName from "./TasksPage/Search/searchQueryParamsName";
 
 const useQueryParameters = () => {
     const location = useLocation()
-const dupa = new URLSearchParams(location.search).get(searchQueryParamsName)
+const loc = new URLSearchParams(location.search).get(searchQueryParamsName)
 
 }
 
