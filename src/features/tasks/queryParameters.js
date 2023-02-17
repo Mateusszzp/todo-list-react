@@ -1,29 +1,31 @@
+import { useEffect } from "react";
+import { useState } from "react";
 import { useHistory, useLocation } from "react-router-dom";
 import searchQueryParamsName from "./TasksPage/Search/searchQueryParamsName";
 
 
 
 export const useQueryParameters = () => {
-    const location = useLocation()
-    const loc = new URLSearchParams(location.search).get(searchQueryParamsName)
+  const location = useLocation()
+  const loc = new URLSearchParams(location.search).get(searchQueryParamsName)
 
-    return loc
+  return loc
 }
-export const useReplaceQueryParameters = (key, value,) => {
-    const history = useHistory();
-    const location = useLocation()
+export const useReplaceQueryParameters = (value, key) => {
+  const history = useHistory();
+  const location = useLocation()
+  const searchParams = new URLSearchParams(location.search);
 
-    const searchParams = new URLSearchParams(location.search);
+  if (target.value.trim() === "" ? target.value : undefined) {
 
-value ? searchParams.delete(key) : searchParams.set(key,)
+    searchParams.delete(key);
+  } else {
+    searchParams.set(key, target.value)
+  }
+  history.push(`${location.pathname}?${searchParams.toString()}`)
 
-    
-        
-    
-    history.push(`${location.pathname}?${searchParams.toString()}`);
-return {key, value}
+  return { value, key }
+
 }
-
-
 
 
