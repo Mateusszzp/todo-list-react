@@ -16,13 +16,7 @@ export const useReplaceQueryParameters = (value, key) => {
   const location = useLocation()
   const searchParams = new URLSearchParams(location.search);
 
-  if (target.value.trim() === "" ? target.value : undefined) {
-
-    searchParams.delete(key);
-  } else {
-    searchParams.set(key, target.value)
-  }
-  history.push(`${location.pathname}?${searchParams.toString()}`)
+ 
 
   return { value, key }
 
