@@ -7,7 +7,7 @@ function* fetchExampleTasksHandler() {
         yield delay(1000)
         const exampleTasks = yield call(getExampleTasks);
         yield put(setTasks(exampleTasks));
-    } catch (error) { yield put(error) }
+    } catch (error) { yield put(alert ("problem z pobioeraniem"),error) }
 };
 function* saveTasksInLocalStorageHandler() {
     const tasks = yield select(selectTasks);
