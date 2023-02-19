@@ -7,6 +7,7 @@ const Search = () => {
 
 	const query = useQueryParameters();
 	const replaceQueryParameters = useReplaceQueryParameters();
+	
 	const onInputchange = ({ target }) => {
 		replaceQueryParameters({
 			key: searchQueryParamsName,
@@ -16,7 +17,6 @@ const Search = () => {
 	return (
 		<Wrapper>
 			<Input
-			
 				placeholder="Filter zadań"
 				value={query || ""}
 				onChange={onInputchange} />

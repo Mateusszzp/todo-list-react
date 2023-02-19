@@ -1,4 +1,3 @@
-
- export default "szukaj"
+export default "szukaj"
 
 

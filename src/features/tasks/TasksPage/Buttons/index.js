@@ -6,7 +6,7 @@ import {
   selectHideDone,
   selectAreTasksEmpty,
   selectIsTasksEveryDone,
-  } from "../../tasksSlice";
+} from "../../tasksSlice";
 
 const Buttons = () => {
   const hideDone = useSelector(selectHideDone);
@@ -31,5 +31,6 @@ const Buttons = () => {
       )}
     </div >
   )
-}
+};
+
 export default Buttons;

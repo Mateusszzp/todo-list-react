@@ -39,5 +39,5 @@ function TasksPage() {
           <Buttons />} />
     </>
   );
-}
+};
 export default TasksPage;

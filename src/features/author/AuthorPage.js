@@ -16,5 +16,5 @@ const AuthorPage = () => (
                 Muzyka słucham długie kawałki typu <strong>latin house</strong> wprawiają mnie w dobry nastru i pozalają się skupić.
                 <b>Mam nadzieję że spotkamy się w Naszej nowej pracy</b> 🖐</p> </>} />
     </>
-)
+);
 export default AuthorPage;
