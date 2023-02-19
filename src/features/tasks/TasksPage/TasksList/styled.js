@@ -14,10 +14,11 @@ export const Item = styled.li`
     word-break: break-word;
     border-bottom: 1px solid ${({ theme }) => theme.colors.mercury};
     padding: 12px;
-    align-items: center
-
-   ${({ hidden }) => hidden && css`
+    align-items: center;
+   
+    ${({ hidden }) => hidden && css`
         display: none;
+       
   `}
 `;
 
@@ -61,7 +62,7 @@ export const ButtonRemove = styled.button`
     border-radius: 3px;
    }
 `;
-    export const Links = styled(NavLink)`
+export const Links = styled(NavLink)`
     text-decoration: none;
     color: ${({ theme }) => theme.colors.teal};
  &:hover {
