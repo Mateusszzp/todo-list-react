@@ -22,11 +22,13 @@ const Form = () => {
     }));
 
     if (!trimednewTaskContent) {
+      
       return;
     }
     setNewTaskContent("");
     inputRef.current.focus();
   };
+
   return (
     <Forms onSubmit={onFormSubmit}>
       <Input

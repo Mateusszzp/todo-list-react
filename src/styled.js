@@ -3,6 +3,7 @@ import styled, { createGlobalStyle } from "styled-components";
 
 
 export const GlobalStyle = createGlobalStyle`
+
 html {
     box-sizing: border-box;
     background-color: #e7e5e5;
@@ -11,7 +12,8 @@ html {
   *, ::after, ::before {
     box-sizing: inherit;
   }
-  `;
+`;
+
 export const Body = styled.div`
     margin: auto;
     max-width: 900px;
@@ -20,7 +22,7 @@ export const Body = styled.div`
     flex-direction: column;
     font-family: 'Lato', sans-serif;
     background-color: #e7e5e5;
-`
+`;
 export const StyledNavLink = styled(NavLink)`
     padding: 15px;
     color: white;

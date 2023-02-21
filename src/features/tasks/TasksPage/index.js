@@ -21,7 +21,7 @@ function TasksPage() {
             onClick={() => dispatch(fetchExampleTasks())}>
             {
               loading
-                ? "Pobierz przykładowe zadania"
+                ? "Pobierz przykładowe zadania"  
                 : <ThreeDots
                   stroke="teal"
                   strokeOpacity={0.75}

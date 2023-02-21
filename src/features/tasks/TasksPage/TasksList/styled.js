@@ -16,16 +16,16 @@ export const Item = styled.li`
     padding: 12px;
     align-items: center;
    
-    ${({ hidden }) => hidden && css`
+  ${({ hidden }) => hidden && css`
         display: none;
        
-  `}
+ `}
 `;
 
 export const Content = styled.span`
-    ${({ done }) => done && css`
+  ${({ done }) => done && css`
         text-decoration: line-through
-  `}
+ `}
 `;
 
 export const ButtonDone = styled.button`
@@ -39,14 +39,14 @@ export const ButtonDone = styled.button`
     cursor: pointer;
     transition: background 0.3s;
 
- &:hover {
+  &:hover {
     background:#07cf07;
     border-radius: 3px;
-   }
+  }
 `;
 
 export const ButtonRemove = styled.button`
-   width: 30px;
+    width: 30px;
     height: 30px;
     background: ${({ theme }) => theme.colors.milanoRed};
     grid-column: 3;
@@ -57,15 +57,16 @@ export const ButtonRemove = styled.button`
     cursor: pointer;
     transition: background 0.3s;
    
- &:hover {
+  &:hover {
     background: hsl(0, 87%, 65%);
     border-radius: 3px;
-   }
+  }
 `;
 export const Links = styled(NavLink)`
     text-decoration: none;
     color: ${({ theme }) => theme.colors.teal};
- &:hover {
+ 
+  &:hover {
     color:orange;
-   }
+  }
 `;
