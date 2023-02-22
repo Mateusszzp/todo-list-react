@@ -5,7 +5,7 @@ import Header from "../../../common/Header";
 import Section from "../../../common/Section";
 
 const TaskPage = () => {
-  const { id } = useParams()
+  const { id } = useParams();
   const task = useSelector(state => getTaskById(state, id));
 
   return (
@@ -15,14 +15,14 @@ const TaskPage = () => {
         title={
           task
             ? task.content
-            : "Nie znaleziono zadania 😢" 
-        } 
+            : "Nie znaleziono zadania 😢"
+        }
         body={<>
           <strong>
             Ukończono:</strong> {
             task
-              ?.done
-              ? "TAK" : "NIE"
+              ?.id ? task?.done
+              ? "TAK" : "NIE" : "Brak zadania 😭"
           }
         </>} />
     </>

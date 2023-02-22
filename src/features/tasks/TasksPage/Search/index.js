@@ -7,13 +7,16 @@ const Search = () => {
 
 	const query = useQueryParameters();
 	const replaceQueryParameters = useReplaceQueryParameters();
-	
+
 	const onInputchange = ({ target }) => {
 		replaceQueryParameters({
 			key: searchQueryParamsName,
-			value: target.value.trim() !== "" ? target.value : undefined,
+			value: target.value.trim() !== "" 
+      ? target.value 
+      : undefined,
 		})
 	};
+
 	return (
 		<Wrapper>
 			<Input
