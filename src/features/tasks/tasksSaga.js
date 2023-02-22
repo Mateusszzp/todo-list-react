@@ -8,14 +8,10 @@ function* fetchExampleTasksHandler() {
     const exampleTasks = yield call(getExampleTasks);
     yield put(setTasks(exampleTasks));
   } catch (error) {
-    yield put(
-      removeLoadingState(
-        alert(
-          "UWAGA !!! błąd pobierania"),
-        console.error(
-          "Sprawdz czy adres pobierania jest prawwidłowy",
-          error
-        )));
+    yield put(removeLoadingState(
+      alert("UWAGA !!! błąd pobierania"),
+      console.error("Sprawdz adres pobierania")));
+
   }
 };
 function* saveTasksInLocalStorageHandler() {

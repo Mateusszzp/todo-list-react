@@ -20,12 +20,12 @@ export const Button = styled.button`
     cursor: pointer;
     transition:0.5s;
 
- &:hover {
+  &:hover {
     filter:brightness(120%);
     transform:scaleY(1.2) scaleX(1.08);
- }
+    }
 
-    @media (min-width:${({theme}) => theme.breakpoints.mobile}px) 
+  @media (min-width:${({theme}) => theme.breakpoints.mobile}px) 
     {
         flex-basis: 20%;
         flex-wrap: unset;

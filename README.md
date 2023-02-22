@@ -1,11 +1,16 @@
-# ⚒ ***Task list/ React/ Redux*** 📝 
+#  ***Task list/ React/ Redux*** 📝 
 
 ## ⚒ **Description** ⛏
 An application that will help you organize your tasks. In it you can:
 - create tasks
 - mark done or mark off
 - hide all tasks
--perform all tasks with one button
+- perform all tasks with one button
+- Retrieving tasks using an asynchronous function with error handling (incorrect download address and incorrect task ID)
+- task search
+- downloading example tasks
+- loading while downloading
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -16,7 +21,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - JavaScript ES6+
 - React  {styled-components, hooks:useState, useRef, useEffect, custom hook}
 - Redux (hooks: useSelector, useDispatch, selectors, dispatch, reducers)
-- Redux-saga, react-router-dom
+- Redux-saga, react-router-dom,
+- @reduxjs/toolkit
 - Download sample tasks asynchronous function
 - Github, GIT 
 

@@ -3,7 +3,7 @@ import { Forms, Button } from "./styled";
 import { useDispatch } from "react-redux";
 import { addTask } from "../../tasksSlice";
 import { nanoid } from "@reduxjs/toolkit";
-import  Input  from "../../Input/styled"
+import Input from "../../Input/styled"
 
 const Form = () => {
   const [newTaskContent, setNewTaskContent] = useState("");
@@ -22,7 +22,7 @@ const Form = () => {
     }));
 
     if (!trimednewTaskContent) {
-      
+
       return;
     }
     setNewTaskContent("");

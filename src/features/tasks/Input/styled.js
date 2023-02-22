@@ -7,8 +7,8 @@ export default styled.input`
     margin: 5px 0;
 
   @media (min-width:${({ theme }) => theme.breakpoints.mobile}px) 
-  {
+   {
     flex-basis: 78%;
-  }
+   }
 `;
 
