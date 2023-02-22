@@ -5,27 +5,27 @@ import Header from "../../../common/Header";
 import Section from "../../../common/Section";
 
 const TaskPage = () => {
-	const { id } = useParams()
-	const task = useSelector(state => getTaskById(state, id));
+  const { id } = useParams()
+  const task = useSelector(state => getTaskById(state, id));
 
-	return (
-		<>
-			<Header title="Szczegóły zadania " />
-			<Section
-				title={
-          task 
-          ? task.content 
-          : "Nie znaleziono zadania 😢"
-        }
-				body={<>
-					<strong>
-						Ukończono:</strong> {
+  return (
+    <>
+      <Header title="Szczegóły zadania " />
+      <Section
+        title={
+          task
+            ? task.content
+            : "Nie znaleziono zadania 😢" 
+        } 
+        body={<>
+          <strong>
+            Ukończono:</strong> {
             task
-            ?.done 
-            ? "TAK" : "NIE"
-            }
-				</>} />
-		</>
-	);
+              ?.done
+              ? "TAK" : "NIE"
+          }
+        </>} />
+    </>
+  );
 }
 export default TaskPage;

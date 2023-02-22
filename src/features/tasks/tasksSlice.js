@@ -6,7 +6,7 @@ const tasksSlice = createSlice({
     initialState: {
         tasks: getTasksFromLocalStorage(),
         toggleHideDone: false,
-        loading: "none",
+        loading: true,
     },
 
     reducers: {
@@ -34,6 +34,9 @@ const tasksSlice = createSlice({
             state.tasks = tasks
             state.loading = true
         },
+        removeLoadingState: (state) => {
+            state.loading = true
+        },
     }
 });
 
@@ -46,6 +49,7 @@ export const {
     fetchExampleTasks,
     setTasks,
     loading,
+    removeLoadingState,
 } = tasksSlice.actions;
 
 const selectTasksState = state => state.tasks;
