@@ -1,4 +1,3 @@
-
 export const theme = {
     colors:{
         teal: "#0d6e79",//duży buuton
