@@ -10,6 +10,7 @@ An application that will help you organize your tasks. In it you can:
 - task search
 - downloading example tasks
 - loading while downloading
+- Any content/data saved to the localStorage 
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
